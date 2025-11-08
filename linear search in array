@@ -3,7 +3,7 @@
 int main()
 {
     int arr[5] = {1, 2, 3, 4, 5};
-    int i, x = 7;
+    int i, x = 4;
     bool flag = false;
     for (i = 0; i <= 4; i++)
     {
@@ -19,7 +19,7 @@ int main()
     }
     else
     {
-        printf("%d is present in array:", x);
+        printf("%d is present at the index 0f %d:", x, i);
     }
 
     return 0;
