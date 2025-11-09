@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str1[50] = "Hello";
+    char str2[50];
+    char str3[50] = "World";
+    char str4[100];
+
+    int len = strlen(str1);
+    printf("Length of str1: %d\n", len);
+
+    strcpy(str2, str1);
+    printf("Copied str2: %s\n", str2);
+
+    int comparison_result = strcmp(str1, str3);
+    if (comparison_result == 0)
+    {
+        printf("str1 and str3 are equal.\n");
+    }
+    else if (comparison_result < 0)
+    {
+        printf("str1 is lexicographically smaller than str3.\n");
+    }
+    else
+    {
+        printf("str1 is lexicographically larger than str3.\n");
+    }
+
+    strcpy(str4, str1);
+    strcat(str4, " ");
+    strcat(str4, str3);
+    printf("Concatenated string: %s\n", str4);
+
+    return 0;
+}
